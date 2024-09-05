@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Personal Portfolio Website</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="header">
+		<div class="container">
+			<div class="navibar">
+				<div class="logo">JT PHOTOGRAPHY</div>
+				<ul>
+					<li><a href="#header">Home</a></li>
+					<li><a href="#skillser">About me</a></li>
+					<li><a href="#contact2">Contact</a></li>
+					<i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+				</ul>
+				<i class="fa-solid fa-bars" onclick="openmenu()"></i>
+			</div>
+			<!-- <nav>
+				<div class="logo">My Profile</div>
+				<ul id="sidemenu">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#skillser">About me</a></li>
+					<li><a href="#contact2">Contact</a></li>
+					<i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+				</ul>
+				<i class="fa-solid fa-bars" onclick="openmenu()"></i>
+			</nav> -->
+			<div class="header-text">
+				<p>Hi, I am</p>
+				<h1>Jeg C. Tanquizon</h1>
+			</div>
+			<!-- -----------about---------- -->
+	25
+			<div id="about">
+				<div id="containerist" class="container">
+					<div id="row" class="row">
+						<div id="aboutcol1" class="about-col-1">
+							<img id="profimg" src="image 5.jpg" alt="">
+			</div>
+			<div id="aboutcol2" class="about-col-2">
+				<h1 id="subtitle" class="sub.title">About me</h1>
+				<p>Hi, I'm Jeg C. Tanquizon. 25 years old. I live in Amaga, Municipality of Barobo, Province of Surigao del Sur, Philippines. I am a professional photographer. I graduated at Hawkeye University, home of professional photographers around the world. I am also an editor of any kinds of videos. I am now in my 3 years of being a professional photographer.</p>
+			
+			<div class="tab-titles">
+				<p id="skillser" class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+				<p class="tab-links" onclick="opentab('Work')">Work</p>
+				<p class="tab-links" onclick="opentab('Education')">Education</p>
+			</div>
+			<div class="tab-contents active-tab" id="Skills">
+				<ul>
+					<!--<li><span>Playing Instruments</span><br>Guitar and Drums.</li>-->
+					<li><span>Artist</span><br>Professional photographer, Videographer, and Logo designer.</li>
+					<li><span>Editor</span><br>Photo editor and Video editor.</li>
+				</ul>
+			</div>
+			<div class="tab-contents" id="Work">
+				<ul>
+					<li><span>Events</span><br>Wedding, birthday, and any kind of events.</li>
+					<li><span>Personal</span><br>Solo portrait, family picture, graduation photo and etc.</li>
+					<li><span>Designer</span><br>Logo, shirt, sticker and etc.</li>
+				</ul>
+			</div>
+			<div class="tab-contents" id="Education">
+				<ul>
+					<li><span>2009-2014</span><br>Finished elementary education at Amaga Elementary School.</li>
+					<li><span>2014-2017</span><br>Finished secondary education at Barobo National High School.</li>
+					<!--<li><span>2021-2022</span><br>Finished senior high school at Barobo National High School.</li>-->
+					<li><span>2017-2021</span><br>Finished college at Hawkeye University.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	</div>
+	<!-- ----------contact------------- -->
+	<div id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="contact-left">
+					<h2 class="sub-title">Contact Me</h2>
+					<div class="gmail"><ul>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ----------contact1------------- -->
+	<div id="contact1">
+		<div class="container">
+			<div class="row">
+				<div class="contact-1">
+					<img src="circlegmail-removebg-preview.png" alt="">
+					</div>
+					<div class="contact-2">
+						<h4>jegoytanquizon@gmail.com</h4>
+						<div class="contact-4">
+				
+					</div>
+					<div class="contact-3">
+						<img src="phone.png" alt="">
+						<h4>0991-703-1547</h4>
+						</div>
+					<div class="socials">
+						<ul>
+							<li><a href="https://www.facebook.com/jegmar.tanquizon.75?mibextid=ZbWKwL"><img src="FB.png.webp" >
+							</a></li>
+							<li><a href="#"><img src="instaa.png"></a></li> 
+							<li><a href="#"><img src="T.png.png" ></a></li>
+						</ul>
+					
+					
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>	
+	<!-- ----------contact2------------- -->
+	<div id="contact2">
+		<div class="container">
+			<div class="row">
+			<!-- <div class="contact-4">
+				<img src="phone.png" alt="">
+				</div>
+				<div class="contact-3">
+					<h4>0991-703-1547</h4>
+					</div>
+				<div class="socials">
+					<ul>
+						<li><a href="https://www.facebook.com/jegmar.tanquizon.75?mibextid=ZbWKwL"><img src="FB.png.webp" >
+						</a></li>
+						<li><a href="#"><img src="instaa.png"></a></li> 
+						<li><a href="#"><img src="T.png.png" ></a></li>
+					</ul>
+					
+					
+				</div>
+			</div>	 -->
+		</div>
+	</div>
+
+	<script>
+
+		var tablinks = document.getElementsByClassName("tab-links");
+		var tabcontents = document.getElementsByClassName("tab-contents");
+
+		function opentab(tabname){
+			for(tablink of tablinks){
+			tablink.classList.remove("active-link");
+			}
+			for(tabcontent of tabcontents){
+			tabcontent.classList.remove("active-tab");
+			}
+			event.currentTarget.classList.add("active-link");
+			document.getElementById(tabname).classList.add("active-tab");
+		}
+
+	</script>
+
+	<script>
+	
+		var sidemenu = document.getElementById("sidemenu");
+
+		function openmenu(){
+			sidemenu.style.right = "0";
+		}
+		function closemenu(){
+			sidemenu.style.right = "-200px";
+		}
+
+	</script>
+	<footer>
+		<div class="footerBottom">
+			<p>Copyright &copy;2024; Designed by <span class="designer">Jegmar</span></p>
+		</div>
+	</footer>
+
+</body>
+</html>
